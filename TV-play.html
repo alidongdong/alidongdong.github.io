@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>忘ㄋ看吧-怎么追也追不够</title>
+    <link rel="stylesheet" href="css/header&footer.css"/>
+	<link rel="stylesheet" href="css/TV-play.css" />
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<!-- 一、网页头部信息 ----------------------------------------->
+<header id="header" class="clear">
+    <div class="logo">
+        <a href="index.html">
+            忘ㄋ看吧
+        </a>
+    </div>
+    <div id="search">
+        <form action="#">
+            <input type="search" name="txtSearch" placeholder="三生三世 十里桃花">
+            <button>搜搜看吧</button>
+        </form>
+    </div>
+    <ul class="login">
+        <li><a href="loading.html">登录</a></li>
+        <li><a href="register.html">注册</a></li>
+        <li><a href="#">开通VIP</a></li>
+    </ul>
+    <div class="record">
+        <i></i>
+        <b></b>
+        <div>
+            您当前没有观看记录！
+        </div>
+    </div>
+    <div class="uploading">
+        <i></i>
+        <b></b>
+    </div>
+    <div class="server">
+        <i></i>
+        <b></b>
+    </div>
+</header>
+<!-- 二、页面主导航 ------------------------------------------->
+<nav id="nav">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="#">电视剧</a></li>
+        <li><a href="variety-show.html">综艺</a></li>
+        <li><a href="movie.html">电影</a></li>
+        <li><a href="animation.html">动漫</a></li>
+        <li><a href="#">少儿</a></li>
+        <li><a href="#">资讯</a></li>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">体育</a></li>
+        <li><a href="#">娱乐</a></li>
+        <li><a href="#">直播</a></li>
+        <li><a href="#">公益</a></li>
+        <li><a href="#">旅游</a></li>
+        <li><a href="#">教育</a></li>
+        <li><a href="#">游戏</a></li>
+        <li><a href="#">科技</a></li>
+        <li><a href="#">更多&gt;&gt;</a></li>
+    </ul>
+    <div>
+        <a href="#">视频下载</a>
+    </div>
+</nav>
+<!-- 三.主体 --------------------------------------->
+<ul id="tv-nav">
+	<li><a href="#">剧集频道</a></li>
+	<li><a href="#">新上映</a></li>
+	<li><a href="#">大陆剧</a></li>
+	<li><a href="#">TVB</a></li>
+	<li><a href="#">韩剧</a></li>
+	<li><a href="#">英剧</a></li>
+	<li><a href="#">台剧</a></li>
+	<li><a href="#">日剧</a></li>
+	<li><a href="#">忘了剧场</a></li>
+	<li><a href="#">剧集排行榜</a></li>
+	<li><a href="#">狂欢英美</a></li>
+</ul>
+<div id="tv-show">
+	<b></b>
+	<i></i>
+	<ul>
+		<li class="orange"><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+	</ul>
+</div>
+<div id="filter">
+	<div class="filter-region">
+		<p>按地区</p>
+		<ul>
+			<li><a href="#">大陆</a></li>
+			<li><a href="#">香港</a></li>
+			<li><a href="#">台湾</a></li>
+			<li><a href="#">韩国</a></li>
+			<li><a href="#">美国</a></li>
+			<li><a href="#">英国</a></li>
+			<li><a href="#">泰国</a></li>
+			<li><a href="#">新加坡</a></li>
+		</ul>
+	</div>
+	<div class="filter-type">
+		<p>按类型</p>
+		<ul>
+			<li><a href="#">古装</a></li>
+			<li><a href="#">武侠</a></li>
+			<li><a href="#">警匪</a></li>
+			<li><a href="#">军事</a></li>
+			<li><a href="#">神话</a></li>
+			<li><a href="#">科幻</a></li>
+			<li><a href="#">搞笑</a></li>
+			<li><a href="#">偶像</a></li>
+			<li><a href="#">忘了出品</a></li>
+			<li><a href="#">悬疑</a></li>
+			<li><a href="#">历史</a></li>
+			<li><a href="#">儿童</a></li>
+			<li><a href="#">农村</a></li>
+			<li><a href="#">都市</a></li>
+		</ul>
+	</div>
+	<div class="filter-status">
+		<p>按状态</p>
+		<ul>
+			<li><a href="#">更新中</a></li>
+			<li><a href="#">全集</a></li>
+			<li><a href="#">近期上映</a></li>
+			<li><a href="#">仅预告</a></li>
+		</ul>
+	</div>
+	<div class="filter-search-hot">
+		<p>按搜索热词</p>
+		<ul>
+			<li><a href="#">三生三世</a></li>
+			<li><a href="#">再次遇见你</a></li>
+			<li><a href="#">神探夏洛克4</a></li>
+			<li><a href="#">热血长安</a></li>
+			<li><a href="#">极品家丁</a></li>
+			<li><a href="#">我的狐仙老婆</a></li>
+		</ul>
+	</div>
+</div>
+<div id="main">
+	<div class="tv-play-hot">
+		<div class="tv-play-hot-header">
+			<p>黄金档</p>
+			<b>
+				<img src="image/lanmutiaoguanming.png">
+			</b>
+		</div>
+		<div class="tv-play-hot-main">
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/qianzhuan.jpg">
+						<span>36集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+				<dd>昔日兄弟分裂对垒</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/013.jpg">
+						<span>更新至02-24</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;最强大脑4&gt;郎平曝奥运秘闻</a></dd>
+				<dd>女排主力在美被塞后备箱</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/014.jpg">
+						<span>更新至02-29</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;欢乐喜剧人3&gt;郭麒麟学坏抽烟</a></dd>
+				<dd>你不看看师傅是谁！</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/015.jpg">
+						<span>更新至19</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;我们的挑战&gt;沙溢一秒变丧尸</a></dd>
+				<dd>戏瘾上来拦不住我们的挑战</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/016.jpg">
+						<span>46集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;大明王朝1566&gt;海瑞重返官场</a></dd>
+				<dd>手撕公文为民做主</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/017.jpg">
+						<span>124:18</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;铁道飞虎&gt;黄子韬玩命扒火车</a></dd>
+				<dd>零下20度虚实景高危拍打戏</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/016.jpg">
+						<span>46集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;大明王朝1566&gt;海瑞重返官场</a></dd>
+				<dd>手撕公文为民做主</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/017.jpg">
+						<span>124:18</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;铁道飞虎&gt;黄子韬玩命扒火车</a></dd>
+				<dd>零下20度虚实景高危拍打戏</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="ranking-list">
+		<p>热剧榜单</p>
+		<ul>
+			<li>1</li>
+			<li><a href="#">热血长安 第一季</a></li>
+			<li>5，336.4万</li>
+		</ul>
+		<ul>
+			<li>2</li>
+			<li><a href="#">三生三世十里桃花</a></li>
+			<li>2,125.2万</li>
+		</ul>
+		<ul>
+			<li>3</li>
+			<li><a href="#">大秦帝国之崛起</a></li>
+			<li>850.2万</li>
+		</ul>
+		<ul class="gray">
+			<li>4</li>
+			<li><a href="#">星光灿烂</a></li>
+			<li>800.6万</li>
+		</ul>
+		<ul class="gray">
+			<li>5</li>
+			<li><a href="#">守护丽人 TV版</a></li>
+			<li>794.0万</li>
+		</ul>
+		<ul class="gray">
+			<li>6</li>
+			<li><a href="#">大秦帝国</a></li>
+			<li>697.3万</li>
+		</ul>
+		<ul class="gray">
+			<li>7</li>
+			<li><a href="#">爱，来的刚刚好</a></li>
+			<li>5336.4万</li>
+		</ul>
+		<ul class="gray">
+			<li>8</li>
+			<li><a href="#">微微一笑很倾城</a></li>
+			<li>469.0万</li>
+		</ul>
+		<ul class="gray">
+			<li>9</li>
+			<li><a href="#">我的狐仙老婆 第二季</a></li>
+			<li>360.2万</li>
+		</ul>
+		<ul class="gray">
+			<li>10</li>
+			<li><a href="#">老爸当家</a></li>
+			<li>355.9万</li>
+		</ul>
+	</div>
+</div>
+<p class="advertisement">
+	<img src="image/1300-100 (1).jpg">
+</p>
+<div id="tv-roll-play">
+	<dl>
+		<dt>
+			<a href="#">
+				<img src="image/0510000058D540C4ADB9120591070F28.gif">
+				<span>36集全</span>
+			</a>
+		</dt>
+		<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+		<dd>昔日兄弟分裂对垒</dd>
+	</dl>
+	<dl>
+		<dt>
+			<a href="#">
+				<img src="image/0510000058B23A66AD9E07055306A229.gif">
+				<span>更新至02-24</span>
+			</a>
+		</dt>
+		<dd><a href="#">&lt;最强大脑4&gt;郎平曝奥运秘闻</a></dd>
+		<dd>女排主力在美被塞后备箱</dd>
+	</dl>
+	<dl>
+		<dt>
+			<a href="#">
+				<img src="image/001.gif">
+				<span>更新至02-29</span>
+			</a>
+		</dt>
+		<dd><a href="#">&lt;欢乐喜剧人3&gt;郭麒麟学坏抽烟</a></dd>
+		<dd>你不看看师傅是谁！</dd>
+	</dl>
+	<dl>
+		<dt>
+			<a href="#">
+				<img src="image/0510000058D480AAADB91205AD0D4DC8.gif">
+				<span>更新至19</span>
+			</a>
+		</dt>
+		<dd><a href="#">&lt;我们的挑战&gt;沙溢一秒变丧尸</a></dd>
+		<dd>戏瘾上来拦不住我们的挑战</dd>
+	</dl>
+	<dl>
+		<dt>
+			<a href="#">
+				<img src="image/0510000058CEA02BAD9E070574055BFD.gif">
+				<span>46集全</span>
+			</a>
+		</dt>
+		<dd><a href="#">&lt;大明王朝1566&gt;海瑞重返官场</a></dd>
+		<dd>手撕公文为民做主</dd>
+	</dl>
+</div>
+<div class="main-all">
+	<div class="guess">
+		<p>猜你喜欢</p>
+		<div class="tv-play-hot-main">
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/068.jpg">
+						<span>36集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+				<dd>昔日兄弟分裂对垒</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/69.jpg">
+						<span>更新至02-24</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;最强大脑4&gt;郎平曝奥运秘闻</a></dd>
+				<dd>女排主力在美被塞后备箱</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/70.jpg">
+						<span>更新至02-29</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;欢乐喜剧人3&gt;郭麒麟学坏抽烟</a></dd>
+				<dd>你不看看师傅是谁！</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/68.jpg">
+						<span>更新至19</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;我们的挑战&gt;沙溢一秒变丧尸</a></dd>
+				<dd>戏瘾上来拦不住我们的挑战</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/200-110-1.jpg">
+						<span>36集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+				<dd>昔日兄弟分裂对垒</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/70.jpg">
+						<span>36集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+				<dd>昔日兄弟分裂对垒</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<div id="only">
+	<div class="tv-play-hot">
+		<div class="tv-play-hot-header">
+			<p>独家策划</p>
+			<b>
+				<img src="image/0510000057BBB45F67BC3D4E150C5B48.png">
+			</b>
+		</div>
+		<div class="tv-play-hot-main">
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/050C000058D21CA3ADB91205AD025444.jpg">
+						<span>36集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+				<dd>昔日兄弟分裂对垒</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/029.jpg">
+						<span>更新至02-24</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;最强大脑4&gt;郎平曝奥运秘闻</a></dd>
+				<dd>女排主力在美被塞后备箱</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/030.jpg">
+						<span>更新至02-29</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;欢乐喜剧人3&gt;郭麒麟学坏抽烟</a></dd>
+				<dd>你不看看师傅是谁！</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/031.jpg">
+						<span>更新至19</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;我们的挑战&gt;沙溢一秒变丧尸</a></dd>
+				<dd>戏瘾上来拦不住我们的挑战</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/037.jpg">
+						<span>46集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;大明王朝1566&gt;海瑞重返官场</a></dd>
+				<dd>手撕公文为民做主</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/038.jpg">
+						<span>124:18</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;铁道飞虎&gt;黄子韬玩命扒火车</a></dd>
+				<dd>零下20度虚实景高危拍打戏</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/024.jpg">
+						<span>46集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;大明王朝1566&gt;海瑞重返官场</a></dd>
+				<dd>手撕公文为民做主</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/023.jpg">
+						<span>124:18</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;铁道飞虎&gt;黄子韬玩命扒火车</a></dd>
+				<dd>零下20度虚实景高危拍打戏</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="ranking-list">
+		<p>韩剧热播榜</p>
+		<ul>
+			<li>1</li>
+			<li><a href="#">热血长安 第一季</a></li>
+			<li>5，336.4万</li>
+		</ul>
+		<ul>
+			<li>2</li>
+			<li><a href="#">三生三世十里桃花</a></li>
+			<li>2,125.2万</li>
+		</ul>
+		<ul>
+			<li>3</li>
+			<li><a href="#">大秦帝国之崛起</a></li>
+			<li>850.2万</li>
+		</ul>
+		<ul class="gray">
+			<li>4</li>
+			<li><a href="#">星光灿烂</a></li>
+			<li>800.6万</li>
+		</ul>
+		<ul class="gray">
+			<li>5</li>
+			<li><a href="#">守护丽人 TV版</a></li>
+			<li>794.0万</li>
+		</ul>
+		<ul class="gray">
+			<li>6</li>
+			<li><a href="#">大秦帝国</a></li>
+			<li>697.3万</li>
+		</ul>
+		<ul class="gray">
+			<li>7</li>
+			<li><a href="#">爱，来的刚刚好</a></li>
+			<li>5336.4万</li>
+		</ul>
+		<ul class="gray">
+			<li>8</li>
+			<li><a href="#">微微一笑很倾城</a></li>
+			<li>469.0万</li>
+		</ul>
+		<ul class="gray">
+			<li>9</li>
+			<li><a href="#">我的狐仙老婆 第二季</a></li>
+			<li>360.2万</li>
+		</ul>
+		<ul class="gray">
+			<li>10</li>
+			<li><a href="#">老爸当家</a></li>
+			<li>355.9万</li>
+		</ul>
+	</div>
+</div>
+<div class="main-all">
+	<div class="guess">
+		<p>港台热播剧</p>
+		<div class="tv-play-hot-main">
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058C897CCAD9E0705D60E49F8.jpg">
+						<span>36集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+				<dd>昔日兄弟分裂对垒</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058C91881AD9E0705B70B9076.jpg">
+						<span>更新至02-24</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;最强大脑4&gt;郎平曝奥运秘闻</a></dd>
+				<dd>女排主力在美被塞后备箱</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058C7679EAD9E0705DA0F2990.jpg">
+						<span>更新至02-29</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;欢乐喜剧人3&gt;郭麒麟学坏抽烟</a></dd>
+				<dd>你不看看师傅是谁！</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058C8A27DADC0B005BF031FAF.jpg">
+						<span>更新至19</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;我们的挑战&gt;沙溢一秒变丧尸</a></dd>
+				<dd>戏瘾上来拦不住我们的挑战</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058C7475DADB91205C009F11D.jpg">
+						<span>36集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+				<dd>昔日兄弟分裂对垒</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058BE2BD0ADC0AE0570002968.jpg">
+						<span>36集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+				<dd>昔日兄弟分裂对垒</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="guess">
+		<p>最新日韩推送</p>
+		<div class="tv-play-hot-main">
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058D226EEADC0AE05A207FC74.jpg">
+						<span>36集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+				<dd>昔日兄弟分裂对垒</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058D211BCADC0AE05B60E538C.jpg">
+						<span>更新至02-24</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;最强大脑4&gt;郎平曝奥运秘闻</a></dd>
+				<dd>女排主力在美被塞后备箱</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058CF91F2AD9E07057B0A06F6.jpg">
+						<span>更新至02-29</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;欢乐喜剧人3&gt;郭麒麟学坏抽烟</a></dd>
+				<dd>你不看看师傅是谁！</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058CE052EADC0AE059302B8E3.jpg">
+						<span>更新至19</span>
+					</a>
+				</dt>
+				<dd><a href="#">&lt;我们的挑战&gt;沙溢一秒变丧尸</a></dd>
+				<dd>戏瘾上来拦不住我们的挑战</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058CBC7DBADB91205690BE23F.jpg">
+						<span>36集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+				<dd>昔日兄弟分裂对垒</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#">
+						<img src="image/0515000058CCC247AD9E070572067E8E.jpg">
+						<span>36集全</span>
+					</a>
+				</dt>
+				<dd><a href="#">校花前传&gt;李博亮野心破灭</a></dd>
+				<dd>昔日兄弟分裂对垒</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+
+<!-- 四、网页底部信息 --------------------------------------->
+<footer id="footer-top">
+    <div id="footer-top-left">
+        <p>忘ㄋ看吧</p>
+        <ul>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">忘了的周边</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">官方认证</a></li>
+        </ul>
+    </div>
+    <div id="footer-top-center">
+        <p>传送门</p>
+        <ul>
+            <li><a href="#">帮助中心</a></li>
+            <li><a href="#">高级弹幕</a></li>
+            <li><a href="#">活动专题页</a></li>
+            <li><a href="#">侵权申诉</a></li>
+            <li><a href="#">壁纸站</a></li>
+            <li><a href="#">名人堂</a></li>
+        </ul>
+    </div>
+    <div id="footer-top-right">
+        <div class="app-login">
+            <b></b>
+            <p><a href="#">手机端下载</a></p>
+        </div>
+        <div class="weibo">
+            <b></b>
+            <p><a href="#">新浪微博</a></p>
+        </div>
+        <div class="we-chat">
+            <b></b>
+            <p><a href="#">官方微信</a></p>
+        </div>
+    </div>
+</footer>
+<footer id="footer">
+    <p><a href="#">联系我们</a> | <a href="#">关于我们</a> | <a href="#">人才招聘</a> | <a href="#">商家入驻</a> | <a href="#">忘了手机</a> | <a href="#">友情链接</a> | <a href="#">忘了圈子</a> | <a href="#">忘了公益</a> | <a href="#">忘了的故事</a></p>
+    <p>Copyright 2017-2027 wangle.com Corporation , All Rights Reserved</p>
+    <p>
+        <img src="image/jy.jpg">
+        <img src="image/kx.jpg">
+        <img src="image/cy.jpg">
+        <img src="image/cx.jpg">
+    </p>
+    <p>浙江杭州忘了吧集团有限公司 版权出品</p>
+    <p id="legal">
+        &copy; 2017-03 . All Rights Reserved.
+        &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+        Design by <a href="#">陆姑娘</a>. Photos by <a href="#">fotogrph</a>.
+    </p>
+</footer>
+</body>
+</html>

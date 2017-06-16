@@ -1,0 +1,196 @@
+#nav li:nth-child(4) a{
+	color:#EA8101;
+}
+/******/
+#movie-nav{
+	display:flex;
+	margin-top:15px;
+}
+#movie-nav li{
+	margin-left:20px;
+}
+#movie-nav li:first-child a{
+	color:#EA8101;
+}
+#movie-show{
+	width:1180px;
+	height:460px;
+	margin:20px auto 15px;;
+	background:url(../image/roll-img-06.jpg);
+	position:relative;
+}
+#movie-show b{
+	display:block;
+	height:23px;
+	width:13px;
+	background:url(../image/g_0c02dfd.png) no-repeat -1px -260px;
+	position:absolute;
+	right:10px;
+	bottom:250px;
+}
+#movie-show i{
+	display:block;
+	height:23px;
+	width:13px;
+	background:url(../image/g_0c02dfd.png) no-repeat -17px -260px;
+	position:absolute;
+	left:10px;
+	bottom:230px;
+}
+#movie-show b,i:hover{
+	cursor:pointer;
+}
+#movie-show ul{
+	display:flex;
+	position:absolute;
+	bottom:15px;
+	left:385px;
+	
+}
+#movie-show li{
+	margin:5px 15px;
+	background:rgba(255,255,255,0.5);
+	height:13px;
+	width:13px;
+	border-radius:50%;
+}
+#movie-show li.orange{
+	background:#EA8101;
+}
+#movie-show li:hover{
+	background:#EA8101;
+}
+
+/*********/
+#filter{
+	width:1180px;
+	margin:20px auto;
+	border-bottom:3px solid #ddd;
+	height:93px;
+	display:flex;
+	padding-left:30px;
+}
+#filter>div>p{
+	background:#909090;
+	padding:5px;
+	color:#fff;
+	font-weight:bold;
+}
+#filter>div>ul{
+	display:flex;
+	flex-wrap:wrap;
+	margin-right:30px;
+}
+#filter>div>ul li{
+	margin-right:10px;
+	margin-top:10px;
+}
+#filter>div.filter-region>p{
+	width:48px;
+}
+#filter>div.filter-type>p{
+	width:48px;
+}
+#filter>div.filter-status>p{
+	width:48px;
+}
+#filter>div.filter-search-hot>p{
+	width:72px;
+}
+#filter>div.filter-search-hot{
+	margin-right:0;
+}
+/**********************************/
+#main{
+	display:flex;
+}
+ div.tv-play-hot{
+	width:880px;
+	margin-left:10px;
+}
+ div.tv-play-hot-header{
+	display:flex;
+}
+ div.tv-play-hot-header p{
+	font-size:26px;
+	color:#909090;
+	font-weight:bold;
+	margin-bottom:15px;
+	flex-grow:1;
+}
+ div.tv-play-hot-header b{
+	padding-right:15px;
+}
+ div.tv-play-hot-main{
+	display:flex;
+	flex-wrap:wrap;
+}
+ div.ranking-list{
+	width:310px;
+}
+ div.tv-play-hot-main dl{
+	margin-bottom:10px;
+	margin-right:20px;
+}
+ div.tv-play-hot-main dl>dt img{
+	width:200px;
+}
+ div.tv-play-hot-main dl>dt a{
+	position:relative;
+}
+ div.tv-play-hot-main dl>dt a span{
+	position:absolute;
+	bottom:5px;
+	left:5px;
+	color:#fff;
+}
+#main div.ranking-list p{
+	font-size:26px;
+	color:#909090;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+#main div.ranking-list ul{
+	display:flex;
+	margin-bottom:10px;
+}
+#main div.ranking-list ul li:nth-child(1){
+	height:20px;
+	width:20px;
+	background:#EF3F22;
+	line-height:20px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+}
+#main div.ranking-list ul li:nth-child(2){
+	flex-grow:1;
+}
+#main div.ranking-list ul li a{
+	color:#555;
+	padding-left:10px;
+}
+#main div.ranking-list ul.gray li:nth-child(1){
+	background:#CDCDCD;
+}
+
+#main-all{
+	width:1200px;
+	margin-left:10px;
+}
+#main-all div.guess{
+	width:1200px;
+	position:relative;
+	overflow: hidden;
+
+}
+#main-all div.guess p{
+	font-size:20px;
+
+	color:#909090;
+	margin:10px 0;
+}
+#main-all div.guess div.tv-play-hot-main{
+	display:flex;
+	flex-wrap: nowrap;
+}
